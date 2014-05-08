@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+
+body {
+  background-color:#eee;
+  color:#333;
+  font-family: 'Open Sans', sans-serif;
+  background:      url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARklEQVQYV4XQ2QkAMAgDUB3B/WdzBR3BYqGlh0e+HwkERcSgiaoCdtAREdVwIR9MG0+UwheFMEIfzNAFK7RhhyZkZvOfugxUUECyPQdrKQAAAABJRU5ErkJggg==) repeat;
+  margin:0;
+  padding:0;
+}
+
+* {
+  -webkit-transition: all 0.2s; /* For Safari 3.1 to 6.0 */
+  transition: all 0.2s;
+}
+
+.clear {
+  width:100%;
+  clear:both;
+}
+
+#container {
+  width:80%;
+  margin:0 auto;
+}
+
+header {
+  background-color:#333;
+  box-shadow: 0px 2px 3px #999;
+  border-bottom:5px solid #2eb3ff;
+  padding:15px 0;
+}
+
+header div {
+  width:80%;
+  margin:0 auto;
+}
+
+header img {
+  width: 200px;
+  height:auto;
+}
+
+h1 {
+  color:#fff;
+  font-size:42px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+  text-shadow:0px 0px 3px #333;
+  line-height:200px;
+  height:200px;
+  background-size:cover;
+  background-position:center;
+  margin:0;
+  box-shadow: inset 0px 0px 50px 5px rgba(0,0,0, 0.5);
+
+}
+
+h2 {
+  color:#333;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1.home {
+  background-image: url(/img/puppy.jpg);
+}
+
+h1.about {
+  background-image: url(/img/puppy2.jpg);
+}
+
+h1.contact {
+  background-image: url(/img/puppy3.jpg);
+}
+
+.button {
+}
+
+nav {
+  display:inline-block;
+  float:right;
+  padding-top:10px;
+
+  ul {
+    list-style-type:none;
+    margin:0;
+
+    padding:0;
+    text-align:right;
+
+    li {
+      display:inline-block;
+      padding: 10px 15px;
+      color:#fff;
+
+      a {
+        color:#fff;
+        text-decoration:none;
+        font-family: 'Oswald', sans-serif;
+        font-size:18px;
+        text-shadow:1px 2px 2px #000;
+      }
+
+      a:hover {
+        color:#2eb3ff;
+        border-bottom:2px solid #2eb3ff;
+      }
+    }
+  }
+}
+
+#pets {
+
+  .pet {
+    width:180px;
+    height:180px;
+    background-size:cover;
+    padding:10px;
+
+    .kill {
+      float:right;
+    }
+  }
+
+  div {
+    display:inline-block;
+    margin:10px;
+  }
+
+  a {
+    text-decoration:none;
+    color:#333;
+
+    :hover {
+      color:#2eb3ff;
+    }
+  }
+
+  h3 {
+    padding-bottom:5px;
+    margin:0;
+    color:#fff;
+    text-shadow:0px 0px 2px #000;
+    float:left;
+  }
+
+  img {
+    width:200px;
+    height:auto;
+  }
+}
+
+a.newpet {
+  background-color:#2eb3ff;
+  color:#fff;
+  border-radius: 2px;
+  padding:5px 10px;
+  text-decoration:none;
+}
+
+.inline {
+  display:inline-block;
+  margin-right:20px;
+}

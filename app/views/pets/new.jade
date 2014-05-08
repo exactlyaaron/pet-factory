@@ -1,0 +1,18 @@
+extends ../shared/template
+
+block content
+
+  #container
+    h2 ADD A NEW PET
+
+    form(method='POST', action='/pets')
+      input(name='name', type='text', placeholder='Name...')
+      input(name='age', type='text', placeholder='Age...')
+      select(name='gender')
+        option M
+        option F
+      select(name='species')
+        option Wolf
+        option Kitten
+        option Panda
+      input(type='submit')

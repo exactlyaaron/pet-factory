@@ -1,0 +1,13 @@
+extends ../shared/template
+
+block content
+
+  #container
+    h2 #{pet.name}
+    h3.inline Gender: #{pet.gender}
+    h3.inline Age: #{pet.age}
+    h3.inline Species: #{pet.species}
+
+    .clear
+
+    img(src='/img/#{pet.photo}')

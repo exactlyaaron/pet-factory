@@ -1,0 +1,17 @@
+extends ../shared/template
+
+block content
+
+  #container
+    h2.inline ALL THE PETS
+    a(class='newpet' href='/pets/new') Add New Pet
+
+    .clear
+    #pets
+      each pet in pets
+        .pet(style='background-image:url(/img/#{pet.photo})')
+          a(href='/pets/#{pet._id}')
+            h3 #{pet.name}
+          .kill
+            form(action='/pets/#{pet._id}/delete', method='POST')
+              button Delete
